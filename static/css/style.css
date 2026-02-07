@@ -1,0 +1,49 @@
+/* Дополнительные стили для улучшения внешнего вида */
+
+.currency-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.currency-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border-right: none;
+}
+
+.form-select, .form-control {
+    border-left: none;
+}
+
+.badge {
+    font-size: 0.9em;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+#swapCurrencies {
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#swapCurrencies:hover {
+    transform: rotate(180deg);
+    background-color: #667eea;
+    color: white;
+}
+
+/* Анимация появления результата */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.result-box {
+    animation: fadeIn 0.5s ease;
+}
